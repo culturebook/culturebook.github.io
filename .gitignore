@@ -3,3 +3,9 @@
 _index.php
 deployment-config.json
 index.php
+assets/includes
+assets/js
+assets/images
+assets/fonts
+assets/docs
+assets/docs.scss
