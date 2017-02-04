@@ -1,0 +1,47 @@
+html, body {
+  background-color: #232323;
+  height: 100%;
+}
+
+body {
+  font-family: Calibri, "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  margin: 0 auto;
+  line-height: 1.5;
+  color: #FFF;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  flex-flow: wrap row;
+  flex:1 0 auto;
+}
+
+.cb-main__heading {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.cb-main__lead {
+  text-align: center;
+}
+
+p {
+  line-height: 1.33333;
+  font-size: 1.3125rem;
+}
+
+/*@media screen and (min-width:480px) {
+  body {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .cb-main__heading {
+    width: 50%;
+  }
+  .cb-main__lead {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}*/
