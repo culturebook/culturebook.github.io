@@ -11,3 +11,4 @@ assets/docs
 assets/docs.scss
 node_modules/
 package-lock.json
+.cache
