@@ -9,3 +9,5 @@ assets/images
 assets/fonts
 assets/docs
 assets/docs.scss
+node_modules/
+.cache/
