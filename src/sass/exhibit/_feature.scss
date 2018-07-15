@@ -1,0 +1,19 @@
+.exhibit {
+  &-feature {
+    @media (max-width:$screen-sm-max) {
+      padding-left: 0;
+      padding-right: 0;
+      max-height: 300px;
+      max-height: 60vh;
+    }
+
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      display: block;
+      margin: auto;
+      height: auto;
+    }
+  }
+}

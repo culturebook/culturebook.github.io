@@ -1,0 +1,51 @@
+.burger {
+  &--sm {
+    display :inline-block;
+    padding-right :15px;
+    position: relative;
+    z-index :1;
+    padding :$side-padding-xs;
+
+    img {
+      width: 30px;
+      height:auto;
+      display :block;
+      margin: 0;
+    }
+  }
+}
+
+.hamburger {
+
+  &-label {
+    position: absolute;
+    z-index: 10;
+    left: 50px;
+    top: -5px;
+    font-size: 50px;
+    cursor: pointer;
+    color: #000;
+    width: 20px;
+    height: 20px;
+    transform: rotate(0deg);
+    transition: all ease-in-out 0.4s;
+    display :block;
+    text-align: center;
+
+    &:focus, &:hover {
+      color: $culturebook;
+    }
+  }
+
+  &-checkbox {
+    position: absolute;
+    opacity: 0;
+  }
+}
+
+.hamburger-checkbox:checked ~ .hamburger-label {
+  transform :rotate(-180deg);
+  color: #ffffff;
+  left :50px;
+  top :55px;
+}

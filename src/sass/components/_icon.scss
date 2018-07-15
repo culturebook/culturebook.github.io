@@ -1,0 +1,16 @@
+.icon {
+
+  &-small {
+    display: block;
+    width: 25px;
+    height: auto;
+  }
+
+  &-chevron {
+    &-down {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}

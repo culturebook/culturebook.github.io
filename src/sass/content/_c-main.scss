@@ -1,0 +1,7 @@
+.c-main {
+  background-color: $background;
+  //color: #FFF;
+  section {
+    @extend .container;
+  }
+}

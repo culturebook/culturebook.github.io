@@ -1,0 +1,53 @@
+.menu {
+  position: fixed;
+  right: inherit;
+  z-index: 2;
+  width: 300px;
+  height: 100%;
+  transition: all 0.5s;
+  transform: translate3d(-100%, 0px, 0px);
+  background-color: #373a47;
+  background-repeat: no-repeat;
+  background-position: 20px 15px;
+  background-size: 30px auto;
+  background-image: url(/images/culturebook-small-white.svg);
+  top: 0;
+
+  &-box {
+    height: 100%;
+    box-sizing: border-box;
+    overflow: auto;
+  }
+
+  button {
+    position: absolute;
+    z-index: 100;
+    top: 10px;
+    right: 20px;
+    color: #FFF;
+    background-color: transparent;
+    border:0;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 10px 0;
+  }
+}
+
+.hamburger-checkbox:checked ~ {
+  .menu {
+    transform: translate3d(0, 0px, 0px);
+
+    &-overlay {
+      animation: fadeInFromNone 0.5s ease-in-out;
+      position: fixed;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0, 0.8);
+      opacity: 1;
+      top: 0;
+    }
+
+  }
+
+}

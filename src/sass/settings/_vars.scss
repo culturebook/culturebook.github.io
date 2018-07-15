@@ -1,0 +1,24 @@
+$culturebook           : #b11f29;
+$side-padding-xs       : 15px;
+$border-light          : #DBDBDB;
+$background            : #efefef;
+$screen-sm-max         : 767px;
+$screen-sm-min         : 768px;
+$screen-md-min         : 992px;
+$screen-lg-min         : 1024px;
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.sr-only, .visuallyhidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border: 0;
+}

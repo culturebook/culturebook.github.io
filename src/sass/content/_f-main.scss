@@ -1,0 +1,39 @@
+.f-main {
+  background-color: $culturebook;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .f-logo {
+    margin: auto auto 50px auto;
+    display: block;
+    width: 200px;
+    height: auto;
+  }
+
+  .f-social-links {
+    margin: auto;
+    display: table;
+
+    a {
+      padding: 5px 10px;
+      display: inline-block;
+    }
+    svg {
+      fill:#FFF;
+      width: 60px;
+      height: auto;
+      display: block;
+    }
+  }
+
+  section {
+    @extend .container;
+  }
+
+  h4 {
+    text-align: center;
+    color: #FFF;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+}
