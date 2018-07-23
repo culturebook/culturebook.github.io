@@ -15,6 +15,9 @@ const Layout = ({ children, data }) => (
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
       ]}
+      link={[
+        { rel: 'shortcut icon', href: '/ico/favicon.ico' }
+      ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
     <main className="section">
