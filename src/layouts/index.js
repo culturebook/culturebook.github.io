@@ -4,8 +4,8 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/header'
 import Footer from '../components/footer'
+import PageHeader from '../components/pageheader';
 import './base.scss'
-
 
 const Layout = ({ children, data }) => (
   <div>
@@ -20,10 +20,9 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
+    <PageHeader siteTitle={data.site.siteMetadata.title} />
     <main className="section">
-      <div className="container">
       {children()}
-      </div>
     </main>
     <Footer />
   </div>

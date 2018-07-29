@@ -12,6 +12,7 @@ module.exports = {
           name: "markdown-pages",
         },
       },
-      'gatsby-transformer-remark',
+    'gatsby-transformer-remark',
+    'gatsby-plugin-netlify', // make sure to put last in the array
     ]
 }

@@ -22,3 +22,14 @@ $screen-lg-min         : 1024px;
     height: 1px; width: 1px;
     margin: -1px; padding: 0; border: 0;
 }
+
+.clear {
+    &:after {
+        overflow: hidden;
+        clear:both;
+        display: block;
+        content:"";
+    }
+
+
+}

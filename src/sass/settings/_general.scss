@@ -13,7 +13,7 @@ html, body {
 body {
   min-width: 320px;
   text-rendering: optimizeLegibility;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
   color: #333;
@@ -27,4 +27,8 @@ body {
   @media (min-width: $screen-lg-min) {
     width: 1000px;
   }
+}
+
+h1, h2, h3, h4 {
+  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
 }

@@ -1,0 +1,12 @@
+.pageheader {
+    background-color: #eaeaea;
+    padding: 2rem 0;
+    h1 {
+        @extend .container;
+        font-size: 30px;
+        margin: 0;
+        @media (min-width: $screen-md-min) {
+            font-size: 60px;
+        }
+    }
+}

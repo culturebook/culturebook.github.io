@@ -6,6 +6,7 @@ $icon-font-path: '../fonts/';
 @import '../sass/settings/general';
 
 // components
+@import '../sass/components/article';
 @import '../sass/components/burger';
 @import '../sass/components/icon';
 @import '../sass/components/nav';
@@ -13,6 +14,8 @@ $icon-font-path: '../fonts/';
 @import '../sass/components/header';
 @import '../sass/components/hero';
 @import '../sass/components/featured';
+@import '../sass/components/section';
+@import '../sass/components/pageheader';
 
 // content
 @import '../sass/content/c-main';
