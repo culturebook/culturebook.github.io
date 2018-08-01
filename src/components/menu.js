@@ -19,15 +19,22 @@ class Checkbox extends React.Component {
         });
     }
 
+    checkboxFn = (event) => {
+        if ( !event.target.checked ) {
+            this.state = {
+                isChecked: !this.state.isChecked,
+            };
+        }
+    }
+
     componentDidUpdate() {
-        console.log('component updated');
         this.state = {
             isChecked: false,
         };
     }
 
     render() {
-      return (<input id="hamburger" className="hamburger-checkbox" type="checkbox" checked={this.state.isChecked} onChange={this.toggleChange } />);
+      return (<input id="hamburger" className="hamburger-checkbox" type="checkbox" checked={this.state.isChecked} onChange={this.toggleChange } onClick={this.checkboxFn} />);
     }
 }
 
