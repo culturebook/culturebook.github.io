@@ -4,17 +4,27 @@
 }
 
 .section {
-  div {
-    @extend .container;
-    padding-bottom: 30px;
-    @media (min-width: $screen-sm-min) {
-      padding-bottom: 60px;
-    }
+  div > div, div > section, .page {
+      @extend .container;
+      padding-bottom: 30px;
+      @media (min-width: $screen-sm-min) {
+        padding-bottom: 60px;
+      }
   }
 }
 
 .c-main {
   section {
     @extend .container;
+  }
+}
+
+.page__exhibit {
+  @media (min-width: $screen-sm-min) {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
   }
 }

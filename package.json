@@ -13,7 +13,8 @@
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-remark": "^1.7.44",
     "npm": "^6.2.0",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-tabs": "^2.2.2"
   },
   "keywords": [
     "gatsby"

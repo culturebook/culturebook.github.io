@@ -20,7 +20,7 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
-    <PageHeader siteTitle={data.site.siteMetadata.title} />
+    {/* <PageHeader siteTitle={data.site.siteMetadata.title} /> */}
     <main className="section">
       {children()}
     </main>

@@ -1,8 +1,10 @@
 .exhibit {
-  &-feature {
+  div.exhibit-feature {
+
     @media (max-width:$screen-sm-max) {
       padding-left: 0;
       padding-right: 0;
+      padding-bottom: 0 !important;
       max-height: 300px;
       max-height: 60vh;
     }
@@ -15,5 +17,23 @@
       margin: auto;
       height: auto;
     }
+  }
+
+  &-content {
+    > div {
+
+      @media (max-width:$screen-sm-max) {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+
+    }
+  }
+}
+
+.exhibitTabs {
+  @media (max-width:$screen-sm-max) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }

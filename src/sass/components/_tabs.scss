@@ -1,0 +1,23 @@
+.exhibitTabs {
+    ul {
+        border-bottom: 1px solid #DBDBDB;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        li {
+            padding: 12px 10px;
+            background-color: transparent;
+            border: 0;
+            border-bottom: 2px solid transparent;
+            font-weight: 600;
+            list-style: none;
+            flex: none;
+            cursor: pointer;
+
+            &.react-tabs__tab--selected {
+                border-bottom: 2px solid #b11f29;
+                color: #b11f29;
+            }
+        }
+    }
+}

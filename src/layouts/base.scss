@@ -4,6 +4,7 @@ $icon-font-path: '../fonts/';
 @import '../sass/settings/vars';
 @import '../sass/settings/inherited';
 @import '../sass/settings/general';
+@import '../sass/settings/scaffolding';
 
 // components
 @import '../sass/components/article';
@@ -16,6 +17,7 @@ $icon-font-path: '../fonts/';
 @import '../sass/components/featured';
 @import '../sass/components/section';
 @import '../sass/components/pageheader';
+@import '../sass/components/tabs';
 
 // content
 @import '../sass/content/c-main';

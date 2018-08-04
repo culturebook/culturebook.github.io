@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const AboutPage = ({data}) => (
-  <div>
+  <div className="page">
     <article>
     <h2 id="vision">Vision</h2>
     <p>Culturebook provides the platform to view, curate and promote our cultural heritage.</p>

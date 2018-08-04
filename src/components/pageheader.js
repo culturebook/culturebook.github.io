@@ -4,10 +4,10 @@ import Link from 'gatsby-link'
 
 class PageHeader extends React.Component {
 
-    render( siteTitle ) {
+    render( post ) {
         return (
             <section className="pageheader">
-                <h1>Page title</h1>
+                <h1></h1>
             </section>
         )
     }
