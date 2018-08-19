@@ -4,6 +4,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 class ProfileTabs extends React.Component {
 
     render() {
+
         return (
             <div>
                 <Tabs className="exhibitTabs">
@@ -15,7 +16,8 @@ class ProfileTabs extends React.Component {
                     </TabList>
 
                     <TabPanel>
-                        <h1>{this.props.sendSelection}</h1>
+                        <h1>{this.props.sendSelection.title }</h1>
+                        <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: this.props.sendContent }} />
                     </TabPanel>
 
                     <TabPanel>

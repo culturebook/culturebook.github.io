@@ -6,11 +6,24 @@
 .section {
   div > div, div > section, .page {
       @extend .container;
-      padding-bottom: 30px;
-      @media (min-width: $screen-sm-min) {
-        padding-bottom: 60px;
-      }
   }
+  div > div.react-tabs__tab-panel {
+    padding-left: 30px;
+    padding-right: 30px;
+    @media (min-width: $screen-sm-min) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  div > div {
+    &.exhibitTabs,
+    &.exhibit-content,
+    &.blog-post-content {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
 }
 
 .c-main {
