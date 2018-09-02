@@ -7,7 +7,7 @@ class Results extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            exhibits: ''
+            exhibits: []
         };
     }
 
@@ -46,7 +46,6 @@ class Results extends React.Component {
             }).then((myJson) => {
 
                 const profilesArray = Array.from(myJson.items);
-                console.log(profilesArray);
                 this.setState({exhibits: profilesArray});
 
             }).catch((err) => {
@@ -55,22 +54,35 @@ class Results extends React.Component {
 
     }
 
+    renderItems = (key) => {
+
+        let obj = this.state.exhibits;
+        let exhibit = obj[key];
+
+        if ( exhibit ) {
+
+            return (
+                <li key={key}>
+                    <div className="card">
+                        <img className="card-img-top" src={exhibit.edmPreview} alt={exhibit.title} /><div className="card-body">
+                            <h5 className="card-title">{exhibit.title}</h5>
+                        </div>
+                    </div>
+                </li>
+            )
+
+        }
+    }
+
     render() {
 
         let object = Object.keys(this.state.exhibits);
-        let content = object.map(function(key){
-            return (
-                <li key={key}>
-                    <span>{key} - Title</span>
-                </li>
-            )
-        })
 
         return (
             <div className="page">
                 <h1>Results</h1>
-                <ul>
-                { content }
+                <ul id="result">
+                { object.map( this.renderItems )}
                 </ul>
             </div>
         )
