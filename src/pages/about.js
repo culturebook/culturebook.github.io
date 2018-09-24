@@ -1,8 +1,10 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Helmet from 'react-helmet'
 
 const AboutPage = ({data}) => (
   <div className="page">
+    <Helmet title={ `About`} />
     <article>
     <h2 id="vision">Vision</h2>
     <p>Culturebook provides the platform to view, curate and promote our cultural heritage.</p>

@@ -1,5 +1,6 @@
 import React from "react";
 import PostLink from "../components/post-link";
+import Helmet from 'react-helmet'
 
 const Exhibits = ({
   data: {
@@ -10,7 +11,7 @@ const Exhibits = ({
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />);
 
-  return <div><section>{Posts}</section></div>;
+  return <div><Helmet title={ `Exhibits`} /><section>{Posts}</section></div>;
 
 }
 

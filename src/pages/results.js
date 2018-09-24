@@ -1,13 +1,18 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import PropTypes from "prop-types";
+import Helmet from 'react-helmet'
+
+let param = new URLSearchParams(document.location.search.substring(1));
+let term = param.get("term");
 
 class Results extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            exhibits: []
+            exhibits: [],
+            exhibit: ''
         };
     }
 
@@ -31,8 +36,6 @@ class Results extends React.Component {
     // }
 
     componentDidMount() {
-        let param = new URLSearchParams(document.location.search.substring(1));
-        let term = param.get("term");
         let url = `https://www.europeana.eu/api/v2/search.json?wskey=L6424KAMT&query=${term}`;
 
         //this.processEuropeanaSearch(url);
@@ -54,6 +57,12 @@ class Results extends React.Component {
 
     }
 
+    // goToExhibit(event) {
+    //     event.preventDefault();
+    //     this.setState({exhibit: event.target.dataset.title});
+    //     console.log('clicked');
+    // }
+
     renderItems = (key) => {
 
         let obj = this.state.exhibits;
@@ -63,11 +72,16 @@ class Results extends React.Component {
 
             return (
                 <li key={key}>
+                    <Link to={{
+                        pathname: '/exhibit',
+                        state: { message: 'parsed state'}
+                        }}>
                     <div className="card">
                         <img className="card-img-top" src={exhibit.edmPreview} alt={exhibit.title} /><div className="card-body">
                             <h5 className="card-title">{exhibit.title}</h5>
                         </div>
                     </div>
+                    </Link>
                 </li>
             )
 
@@ -80,6 +94,7 @@ class Results extends React.Component {
 
         return (
             <div className="page">
+                <Helmet title={ `Results for: ${term}` } />
                 <h1>Results</h1>
                 <ul id="result">
                 { object.map( this.renderItems )}

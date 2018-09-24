@@ -63,6 +63,10 @@
 
 .card {
   display: block;
+
+  a & {
+    color:#FFF;
+  }
 }
 
 .card img {

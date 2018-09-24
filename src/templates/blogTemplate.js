@@ -1,5 +1,6 @@
 import React from "react";
 import ProfileTabs from '../components/ProfileTabs';
+import Helmet from 'react-helmet'
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -10,6 +11,7 @@ export default function Template({
 
     <div className="page__exhibit">
 
+      <Helmet title={ `${frontmatter.title} `} />
 
       <article className="exhibit">
         <div className="row">
