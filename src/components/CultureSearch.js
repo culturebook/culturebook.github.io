@@ -4,25 +4,38 @@ import { push } from 'gatsby-link'
 class CultureSearch extends React.Component {
     constructor(props) {
       super(props);
-      this.state = {value: ''};
+      this.state = {
+        value: '',
+        searchTerm: null,
+        key: null
+      };
 
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleChange(event) {
-      this.setState({value: event.target.value});
+      this.setState({
+        value: event.target.value
+      });
     }
 
     handleSubmit(event) {
 
+      let term = "all";
+
       event.preventDefault();
-      const term = encodeURIComponent(this.state.value);
+
+      if ( this.state.value != '' ) {
+        term = this.state.value;
+      }
 
       push({
-        pathname: `/results?term=${term}`
+        pathname: `/results/`,
+        state:{
+            key: encodeURIComponent(term)
+        }
       });
-
     }
 
     render() {

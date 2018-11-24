@@ -10,8 +10,7 @@ class Results extends React.Component {
         this.state = {
             exhibits: [],
             exhibit: '',
-            param: new Map(window.location.search.slice(1).split('&').map(termSearch => termSearch.split('='))),
-            searchTerm: param.get("term")
+            searchTerm: ''
         };
     }
 
@@ -35,7 +34,8 @@ class Results extends React.Component {
     // }
 
     componentDidMount() {
-        let url = `https://www.europeana.eu/api/v2/search.json?wskey=L6424KAMT&query=${this.state.searchTerm}`;
+
+        let url = `https://www.europeana.eu/api/v2/search.json?wskey=L6424KAMT&query=${this.props.location.state.key}`;
 
         //this.processEuropeanaSearch(url);
 
