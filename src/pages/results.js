@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import Helmet from 'react-helmet'
 
 //let param = new URLSearchParams(document.location.search.substring(1));
-let param = new Map(document.location.search.slice(1).split('&').map(termSearch => termSearch.split('=')))
+let param = new Map(location.search.slice(1).split('&').map(termSearch => termSearch.split('=')))
 let term = param.get("term");
 
 class Results extends React.Component {
