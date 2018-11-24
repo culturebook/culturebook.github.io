@@ -26,6 +26,16 @@
 
 }
 
+.page {
+  article {
+    margin: 0 auto;
+    max-width: 95%;
+    @media (min-width: $screen-sm-min) {
+      max-width: 66.666%;
+    }
+  }
+}
+
 .c-main {
   section {
     @extend .container;

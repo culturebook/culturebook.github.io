@@ -12,7 +12,8 @@ class Results extends React.Component {
         super(props);
         this.state = {
             exhibits: [],
-            exhibit: ''
+            exhibit: '',
+            searchTerm: term
         };
     }
 
@@ -78,7 +79,7 @@ class Results extends React.Component {
                         }}>
                     <div className="card">
                         <img className="card-img-top" src={exhibit.edmPreview} alt={exhibit.title} /><div className="card-body">
-                            <h5 className="card-title">{exhibit.title}</h5>
+                        <h5 className="card-title">{exhibit.title}</h5>
                         </div>
                     </div>
                     </Link>
@@ -94,7 +95,7 @@ class Results extends React.Component {
 
         return (
             <div className="page">
-                <Helmet title={ `Results for: ${term}` } />
+                <Helmet title={ `Results for: ${this.state.searchTerm}` } />
                 <h1>Results</h1>
                 <ul id="result">
                 { object.map( this.renderItems )}

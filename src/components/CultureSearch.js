@@ -27,12 +27,10 @@ class CultureSearch extends React.Component {
 
     render() {
       return (
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            Name:
-            <input id="exhibit-search" type="text" value={this.state.value} onChange={this.handleChange} />
-          </label>
-          <input type="submit" value="Submit" />
+        <form onSubmit={this.handleSubmit} className="search">
+          <label htmlFor="exhibit-search" className="visuallyhidden">Name:</label>
+          <input id="exhibit-search" type="search" value={this.state.value} onChange={this.handleChange} placeholder="Add a search term" />
+          <button type="submit" className="search__submit"><span className="visuallyhidden">Search</span><svg id="icon-search" viewBox="0 0 26 30" width="100%" height="100%"><path className="path1" fillRule="evenodd" d="M16.364 1.636q4.061 0 6.939 2.879t2.879 6.939-2.879 6.939-6.939 2.879q-2.879 0-5.242-1.515l-7.394 7.424q-0.636 0.636-1.545 0.636t-1.545-0.636-0.636-1.545 0.636-1.545l7.424-7.394q-1.515-2.364-1.515-5.242 0-4.061 2.879-6.939t6.939-2.879zM16.364 18q2.697 0 4.621-1.924t1.924-4.621-1.924-4.621-4.621-1.924-4.621 1.924-1.924 4.621 1.924 4.621 4.621 1.924z"></path></svg></button>
         </form>
       );
     }

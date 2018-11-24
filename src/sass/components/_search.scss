@@ -1,0 +1,61 @@
+.search {
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+    width: 90%;
+    transition: all 0.6s ease-in-out;
+    padding-right: 55px;
+    margin:30px 0;
+
+    @media (min-width: $screen-sm-min) {
+        width: 50%;
+    }
+
+    input[type="search"] {
+        border: 0;
+        font-size: 20px;
+        box-sizing: border-box;
+        width: 100%;
+        padding:10px;
+        border-radius: 5px 0 0 5px;
+
+        @media (min-width: $screen-sm-min) {
+            font-size: 25px;
+        }
+    }
+}
+
+.search__submit {
+    background-color: $culturebook;
+    border: 0;
+    -webkit-appearance: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 55px;
+    border-radius: 0 5px 5px 0;
+    padding: 0;
+
+    svg {
+        width: 20px;
+        height: 20px;
+        margin: auto;
+        display: block;
+
+        .path1 {
+            fill: #fff;
+        }
+
+    }
+
+    &:hover, &:focus, &:active {
+        background-color: #fff;
+
+        svg .path1 {
+            fill: $culturebook;
+        }
+    }
+
+}

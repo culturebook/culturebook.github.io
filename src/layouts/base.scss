@@ -1,5 +1,7 @@
 $icon-font-path: '../fonts/';
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
 // settings
 @import '../sass/settings/vars';
 @import '../sass/settings/inherited';
@@ -16,6 +18,7 @@ $icon-font-path: '../fonts/';
 @import '../sass/components/hero';
 @import '../sass/components/featured';
 @import '../sass/components/section';
+@import '../sass/components/search';
 @import '../sass/components/pageheader';
 @import '../sass/components/tabs';
 
