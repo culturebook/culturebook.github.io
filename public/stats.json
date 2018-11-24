@@ -1,16 +1,40 @@
 {
   "assetsByChunkName": {
+    "path---results": [
+      "path---results-a0e39f21c11f6a62c5ab.js",
+      "path---results-a0e39f21c11f6a62c5ab.js.map"
+    ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-df93eb0c88a52638909b.js",
-      "component---src-pages-index-js-df93eb0c88a52638909b.js.map"
+      "component---src-pages-index-js-e432d2b5b64e8328cc61.js",
+      "component---src-pages-index-js-e432d2b5b64e8328cc61.js.map"
+    ],
+    "path---exhibit": [
+      "path---exhibit-a0e39f21c11f6a62c5ab.js",
+      "path---exhibit-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---": [
-      "path----cac63ff5c1b42581353c.js",
-      "path----cac63ff5c1b42581353c.js.map"
+      "path----09cc05c7295205922639.js",
+      "path----09cc05c7295205922639.js.map"
+    ],
+    "path---exhibits-rembrandt-van-rijn": [
+      "path---exhibits-rembrandt-van-rijn-d8925b7c79cfc81cf280.js",
+      "path---exhibits-rembrandt-van-rijn-d8925b7c79cfc81cf280.js.map"
+    ],
+    "component---src-pages-exhibit-js": [
+      "component---src-pages-exhibit-js-0f6427a75c8d6d7bc7a9.js",
+      "component---src-pages-exhibit-js-0f6427a75c8d6d7bc7a9.js.map"
+    ],
+    "path---exhibits": [
+      "path---exhibits-708a8a980b8562210460.js",
+      "path---exhibits-708a8a980b8562210460.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-c5bc39321cc22f579343.js",
-      "component---src-layouts-index-js-c5bc39321cc22f579343.js.map"
+      "component---src-layouts-index-js-793d31b72a919dd7197b.js",
+      "component---src-layouts-index-js-793d31b72a919dd7197b.js.map"
+    ],
+    "component---src-templates-blog-template-js": [
+      "component---src-templates-blog-template-js-6490762f5ccfb0a87940.js",
+      "component---src-templates-blog-template-js-6490762f5ccfb0a87940.js.map"
     ],
     "path---page-2": [
       "path---page-2-a0e39f21c11f6a62c5ab.js",
@@ -20,29 +44,45 @@
       "path---index-a0e39f21c11f6a62c5ab.js",
       "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "component---src-pages-results-js": [
+      "component---src-pages-results-js-5d0c0ced156cf23c1305.js",
+      "component---src-pages-results-js-5d0c0ced156cf23c1305.js.map"
+    ],
     "component---src-pages-404-js": [
-      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
-      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
+      "component---src-pages-404-js-49f2d50af1261023836b.js",
+      "component---src-pages-404-js-49f2d50af1261023836b.js.map"
     ],
     "commons": [
-      "commons-94408a678aaed4f5052f.js",
-      "commons-94408a678aaed4f5052f.js.map"
+      "commons-d08bcaa7c0ec1f4c2663.js",
+      "commons-d08bcaa7c0ec1f4c2663.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-page-2-js": [
-      "component---src-pages-page-2-js-1d4f0f19c1c44398ab65.js",
-      "component---src-pages-page-2-js-1d4f0f19c1c44398ab65.js.map"
+      "component---src-pages-page-2-js-7d5d8897183641478a14.js",
+      "component---src-pages-page-2-js-7d5d8897183641478a14.js.map"
     ],
     "app": [
-      "app-59d7b264e4e359556a02.js",
-      "app-59d7b264e4e359556a02.js.map"
+      "app-4832c7adf5fd1654ff35.js",
+      "app-4832c7adf5fd1654ff35.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-about-js": [
+      "component---src-pages-about-js-fe2b204e737bb7f8667c.js",
+      "component---src-pages-about-js-fe2b204e737bb7f8667c.js.map"
+    ],
+    "component---src-pages-exhibits-js": [
+      "component---src-pages-exhibits-js-9b5718d65618c132ec70.js",
+      "component---src-pages-exhibits-js-9b5718d65618c132ec70.js.map"
+    ],
+    "path---about": [
+      "path---about-a0e39f21c11f6a62c5ab.js",
+      "path---about-a0e39f21c11f6a62c5ab.js.map"
     ]
   }
 }

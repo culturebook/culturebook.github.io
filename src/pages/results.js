@@ -3,7 +3,8 @@ import Link from 'gatsby-link'
 import PropTypes from "prop-types";
 import Helmet from 'react-helmet'
 
-let param = new URLSearchParams(document.location.search.substring(1));
+//let param = new URLSearchParams(document.location.search.substring(1));
+let param = new Map(document.location.search.slice(1).split('&').map(termSearch => termSearch.split('=')))
 let term = param.get("term");
 
 class Results extends React.Component {
@@ -37,7 +38,7 @@ class Results extends React.Component {
     // }
 
     componentDidMount() {
-        let url = `https://www.europeana.eu/api/v2/search.json?wskey=L6424KAMT&query=${term}`;
+        let url = `https://www.europeana.eu/api/v2/search.json?wskey=L6424KAMT&query=${this.state.searchTerm}`;
 
         //this.processEuropeanaSearch(url);
 
