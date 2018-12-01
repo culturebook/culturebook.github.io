@@ -1,7 +1,15 @@
 import React from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+// import { createDOMPurify } from 'dompurify';
+// import { JSDOM } from 'jsdom';
 
 class ProfileTabs extends React.Component {
+
+    cleanerContent() {
+        // If DOMPurify worked
+        //return DOMPurify.sanitize(this.props.sendContent);
+        return this.props.sendContent;
+    }
 
     render() {
 
@@ -17,7 +25,7 @@ class ProfileTabs extends React.Component {
 
                     <TabPanel>
                         <h1>{this.props.sendSelection.title }</h1>
-                        <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: this.props.sendContent }} />
+                        <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: this.cleanerContent() }} />
                     </TabPanel>
 
                     <TabPanel>
