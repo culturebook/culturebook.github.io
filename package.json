@@ -5,7 +5,7 @@
   "author": "Calum Ryan dev@calumryan.com",
   "dependencies": {
     "child_process": "^1.0.2",
-    "dompurify": "^1.0.8",
+    "dompurify": "^2.0.3",
     "fs": "0.0.1-security",
     "gatsby": "^1.9.277",
     "gatsby-link": "^1.6.46",
